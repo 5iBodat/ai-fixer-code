@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Code Fixer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>AI Code Fixer</h1>
+  <p>Perbaiki error Java / JSP / SQL secara otomatis.</p>
+
+  <label>Bahasa</label>
+  <select id="language">
+    <option value="java">Java</option>
+    <option value="jsp">JSP</option>
+    <option value="sql">SQL</option>
+  </select>
+
+  <label>Stacktrace</label>
+  <textarea id="stacktrace" placeholder="Paste stacktrace di sini..."></textarea>
+
+  <label>Kode</label>
+  <textarea id="code" placeholder="Paste kode di sini..."></textarea>
+
+  <button id="runBtn">Fix Code</button>
+
+  <h2>Hasil</h2>
+  <pre id="output"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
