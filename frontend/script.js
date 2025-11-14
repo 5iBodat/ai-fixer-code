@@ -3,9 +3,10 @@ document.getElementById("runBtn").addEventListener("click", async () => {
     const stacktrace = document.getElementById("stacktrace").value;
     const code = document.getElementById("code").value;
   
+    const url = "ai-fixer-code-production.up.railway.app/api/fix-code";
     document.getElementById("output").textContent = "Processing...";
   
-    const res = await fetch("http://localhost:3000/fix-code", {
+    const res = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ language, stacktrace, code }),
